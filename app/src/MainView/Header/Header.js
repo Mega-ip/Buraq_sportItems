@@ -4,9 +4,9 @@ import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
 import { updateHeaderItems } from "../../redux/action";
 import useCustomTranslation from "../../i18n";
-import LanguageIcon from "@mui/icons-material/Language";
 import IconButton from "@mui/material/IconButton";
 import LangMenu from "../../Genral/LangMenu/LangMenu";
+import SearchIcon from "@mui/icons-material/Search";
 const HeaderItem = styled.div`
   cursor: pointer;
   font-weight: ${(p) => p.active && "bold"};
@@ -20,9 +20,19 @@ export default function Header() {
 
   return (
     <div className="header__container">
-      {/* logo */}
       <div className="test__logo"></div>
-      {/* nav list */}
+      <form className="header__search">
+        <input type="text" />
+        <IconButton
+          onClick={(e) => {
+            e.preventDefault();
+          }}
+          type="submit"
+          className="header__search_icon"
+        >
+          <SearchIcon />
+        </IconButton>
+      </form>
       <div className="header__list">
         {app.headerItems.map((item) => {
           return (

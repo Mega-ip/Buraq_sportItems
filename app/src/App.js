@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./MainView/Header/Header";
-
+import Leftbar from "./MainView/Leftbar/Leftbar";
 function App() {
   return (
     <div className="app">
@@ -8,6 +8,7 @@ function App() {
       <Header />
       {/* container */}
       {/* left bar */}
+      <Leftbar />
       {/* small footer */}
     </div>
   );

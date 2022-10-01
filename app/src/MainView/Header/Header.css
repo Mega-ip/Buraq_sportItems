@@ -27,3 +27,19 @@
   padding-bottom: 1px;
   border-bottom: 3px solid lightcoral;
 }
+.header__search {
+  width: 300px;
+  border: 1px solid lightcoral;
+  display: flex;
+  border-radius: 999px;
+}
+
+.header__search > input {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-left: 20px;
+}
+.header__search_icon {
+  color: lightcoral !important;
+}
