@@ -3,8 +3,8 @@ import "./FooterCss.css";
 function Footer() {
   return (
     <div className = "footer">
-         <p>This is react sticky footer!!</p>
-        
+         <p> Copyright © 2022 Buraq-sport</p>
+
     </div>
   )
 }
