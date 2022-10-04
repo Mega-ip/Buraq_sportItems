@@ -19,34 +19,65 @@ const LightTooltip = styled(({ className, ...props }) => (
 
 function Leftbar() {
   return (
-    <div className="leftbar__container">
-      <LightTooltip title="Add" placement="right">
-        <IconButton>
-          <PanToolIcon />
-        </IconButton>
-      </LightTooltip>
+    <div>
+      <div className="leftbar__container">
+        <LightTooltip title="Add" placement="right">
+          <IconButton>
+            <PanToolIcon />
+          </IconButton>
+        </LightTooltip>
 
-      <LightTooltip title="Add" placement="right">
-        <IconButton>
-          <PanToolIcon />
-        </IconButton>
-      </LightTooltip>
+        <LightTooltip title="Add" placement="right">
+          <IconButton>
+            <PanToolIcon />
+          </IconButton>
+        </LightTooltip>
 
-      <LightTooltip title="Add" placement="right">
-        <IconButton>
-          <PanToolIcon />
-        </IconButton>
-      </LightTooltip>
-      <LightTooltip title="Add" placement="right">
-        <IconButton>
-          <PanToolIcon />
-        </IconButton>
-      </LightTooltip>
-      <LightTooltip title="Add" placement="right">
-        <IconButton>
-          <PanToolIcon />
-        </IconButton>
-      </LightTooltip>
+        <LightTooltip title="Add" placement="right">
+          <IconButton>
+            <PanToolIcon />
+          </IconButton>
+        </LightTooltip>
+        <LightTooltip title="Add" placement="right">
+          <IconButton>
+            <PanToolIcon />
+          </IconButton>
+        </LightTooltip>
+        <LightTooltip title="Add" placement="right">
+          <IconButton>
+            <PanToolIcon />
+          </IconButton>
+        </LightTooltip>
+      </div>
+      <div className="bottom__container">
+        <LightTooltip title="Add" placement="right">
+          <IconButton>
+            <PanToolIcon />
+          </IconButton>
+        </LightTooltip>
+
+        <LightTooltip title="Add" placement="right">
+          <IconButton>
+            <PanToolIcon />
+          </IconButton>
+        </LightTooltip>
+
+        <LightTooltip title="Add" placement="right">
+          <IconButton>
+            <PanToolIcon />
+          </IconButton>
+        </LightTooltip>
+        <LightTooltip title="Add" placement="right">
+          <IconButton>
+            <PanToolIcon />
+          </IconButton>
+        </LightTooltip>
+        <LightTooltip title="Add" placement="right">
+          <IconButton>
+            <PanToolIcon />
+          </IconButton>
+        </LightTooltip>
+      </div>
     </div>
   );
 }

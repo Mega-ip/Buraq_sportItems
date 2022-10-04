@@ -43,3 +43,21 @@
 .header__search_icon {
   color: lightcoral !important;
 }
+.more__options {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .header__list {
+    display: none;
+  }
+  .more__options {
+    display: block;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .header__search {
+    width: 100px;
+  }
+}
