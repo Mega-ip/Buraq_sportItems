@@ -1,12 +1,9 @@
-
-
-
-   .footer {
-    background-color: rgb(229, 229, 229);
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding:7px ;
-   }
+.footer {
+  background-color: rgb(229, 229, 229);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 7px;
+}

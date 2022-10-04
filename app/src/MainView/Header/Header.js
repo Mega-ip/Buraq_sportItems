@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import "./Header.css";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
@@ -14,21 +14,25 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import Divider from "@mui/material/Divider";
 import Paper from "@mui/material/Paper";
-
+import * as materialStuled from "@mui/material/styles";
 const HeaderItem = styled.div`
   cursor: pointer;
   font-weight: ${(p) => p.active && "bold"};
   padding-bottom: ${(p) => p.active && "1px"};
   border-bottom: ${(p) => p.active && "3px solid lightcoral"};
   color: ${(p) => p.active && "lightcoral"};
+  display: flex;
+
+  & .MuiSvgIcon-root {
+    color: ${(p) => p.active && "lightcoral"};
+  }
 `;
 
 export default function Header() {
   const app = useSelector((state) => state.app);
   const dispatch = useDispatch();
   const { t, i18n } = useCustomTranslation();
-
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -62,7 +66,7 @@ export default function Header() {
           <SearchIcon />
         </IconButton>
       </form>
-      <div className="header__list">
+      <div tabIndex="1" className="header__list">
         {app.headerItems.map((item) => {
           return (
             <HeaderItem

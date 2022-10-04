@@ -17,8 +17,7 @@
   display: flex;
   justify-content: space-between;
   margin-right: 10px;
-  width: 300px;
-  max-width: 500px;
+  width: 400px;
   align-items: center;
 }
 
@@ -47,7 +46,7 @@
   display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .header__list {
     display: none;
   }
@@ -59,5 +58,8 @@
 @media screen and (max-width: 445px) {
   .header__search {
     width: 100px;
+  }
+  .header__search:focus {
+    width: 300px;
   }
 }
