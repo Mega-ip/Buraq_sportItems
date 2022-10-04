@@ -1,0 +1,49 @@
+.sportItem__card {
+  width: 334px !important;
+  border-radius: 20px !important;
+}
+@media screen and (max-width: 847px) {
+  .sportItem__card {
+    width: 300px !important;
+  }
+}
+@media screen and (max-width: 827px) {
+  .sportItem__card {
+    width: 300px !important;
+  }
+}
+@media screen and (max-width: 779px) {
+  .sportItem__card {
+    width: 250px !important;
+  }
+}
+@media screen and (max-width: 759px) {
+  .sportItem__card {
+    width: 250px !important;
+  }
+}
+@media screen and (max-width: 679px) {
+  .sportItem__card {
+    width: 230px !important;
+  }
+}
+@media screen and (max-width: 659px) {
+  .sportItem__card {
+    width: 230px !important;
+  }
+}
+@media screen and (max-width: 639px) {
+  .sportItem__card {
+    width: 220px !important;
+  }
+}
+@media screen and (max-width: 619px) {
+  .sportItem__card {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 445px) {
+  .sportItem__card {
+    width: 100% !important;
+  }
+}

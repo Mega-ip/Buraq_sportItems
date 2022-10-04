@@ -2,16 +2,16 @@ import "./App.css";
 import Header from "./MainView/Header/Header";
 import Leftbar from "./MainView/Leftbar/Leftbar";
 import Footer from "./MainView/Footer/Footer";
-import CardItem from "./Genral/CardItem/CardItem";
+import Container from "./MainView/Container/Container";
 function App() {
   return (
     <div className="app">
       {/* header */}
       <Header />
-      {/* container */}
-      <CardItem />
       {/* left bar */}
       <Leftbar />
+      {/* container */}
+      <Container />
       {/* small footer */}
       <Footer />
     </div>
