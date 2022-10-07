@@ -17,8 +17,7 @@
   display: flex;
   justify-content: space-between;
   margin-right: 10px;
-  width: 300px;
-  max-width: 500px;
+  width: 400px;
   align-items: center;
 }
 
@@ -42,4 +41,25 @@
 }
 .header__search_icon {
   color: lightcoral !important;
+}
+.more__options {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .header__list {
+    display: none;
+  }
+  .more__options {
+    display: block;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .header__search {
+    width: 100px;
+  }
+  .header__search:focus {
+    width: 300px;
+  }
 }
