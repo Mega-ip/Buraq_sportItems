@@ -15,6 +15,8 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import Divider from "@mui/material/Divider";
 import Paper from "@mui/material/Paper";
 import * as materialStuled from "@mui/material/styles";
+import { useNavigate } from "react-router-dom";
+
 const HeaderItem = styled.div`
   cursor: pointer;
   font-weight: ${(p) => p.active && "bold"};
@@ -34,6 +36,8 @@ export default function Header() {
   const { t, i18n } = useCustomTranslation();
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+  const navigate = useNavigate();
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -78,6 +82,7 @@ export default function Header() {
                   return elemnt;
                 });
                 dispatch(updateHeaderItems(temp));
+                navigate(item.path);
               }}
             >
               {t(item.value)}
@@ -115,6 +120,7 @@ export default function Header() {
                           return elemnt;
                         });
                         dispatch(updateHeaderItems(temp));
+                        navigate(item.path);
                       }}
                     >
                       <ListItemIcon>
@@ -143,6 +149,7 @@ export default function Header() {
                         return elemnt;
                       });
                       dispatch(updateHeaderItems(temp));
+                      navigate(item.path);
                     }}
                   >
                     <ListItemIcon>

@@ -11,24 +11,28 @@ const initialState = {
       value: "Home",
       active: true,
       Icon: HomeIcon,
+      path: "/",
     },
     {
       label: "About us",
       value: "About_US",
       active: false,
       Icon: InfoIcon,
+      path: "/about_us",
     },
     {
       label: "Contact Us",
       value: "Contact_Us",
       active: false,
       Icon: ContentPaste,
+      path: "/contact_us",
     },
     {
       label: "Login",
       value: "LOGIN",
       active: false,
       Icon: LoginIcon,
+      path: "/login",
     },
   ],
 };
