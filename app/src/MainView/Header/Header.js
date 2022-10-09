@@ -59,7 +59,7 @@ export default function Header() {
     <div className="header__container">
       <div className="test__logo"></div>
       <form className="header__search">
-        <input type="text" />
+        <input type="text" placeholder="Search" />
         <IconButton
           onClick={(e) => {
             e.preventDefault();
